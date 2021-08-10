@@ -1,0 +1,337 @@
+﻿<Window x:Class="WpfLesson4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLesson4" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <ProgressBar 
+            Name="prgbar"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="30"
+            Height="35"
+            Background="Aquamarine"
+            Foreground="Goldenrod"
+            Value="20"
+            >
+            
+        </ProgressBar>
+
+        <RepeatButton
+            Grid.Row="2"
+            Name="downBtn"
+            Margin="25"
+            Content="Down"
+            FontSize="30"
+            FontWeight="ExtraBold"
+            Background="Goldenrod"
+            Click="downBtn_Click"
+            >
+            
+        </RepeatButton>
+        <RepeatButton
+            Grid.Row="2"
+            Grid.Column="2"
+            Name="upBtn"
+            Margin="25"
+            Content="Up"
+            FontSize="30"
+            FontWeight="ExtraBold"
+            Background="Goldenrod"
+            Click="upBtn_Click"
+            >
+
+        </RepeatButton>
+
+        <Button
+            Grid.Row="0"
+            Grid.Column="1"
+            Name="startBtn"
+            Margin="25"
+            Content="Start"
+            FontSize="30"
+            FontWeight="ExtraBold"
+            Background="Goldenrod"
+            Click="startBtn_Click"
+            >
+
+        </Button>
+
+        <Slider
+            Name="slider"  
+             ValueChanged="slider_ValueChanged"
+            Grid.Row="1"
+            Grid.Column="1"
+            Background="DodgerBlue"
+            VerticalAlignment="Center"
+            Minimum="-50"
+            Maximum="50"
+            Value="0"
+            >
+          
+        </Slider>
+
+        <TextBlock
+            Name="txtblock1"
+            Grid.Row="1"
+            Grid.Column="0"
+            Background="LightGoldenrodYellow"
+            Padding="25"
+            Text="0"
+            FontWeight="ExtraBold"
+            TextAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="35"
+            ></TextBlock>
+        <TextBlock
+            Name="txtblock2"
+            Grid.Row="1"
+            Grid.Column="2"
+            Background="LightGoldenrodYellow"
+            Padding="25"
+            Text="0"
+            FontWeight="ExtraBold"
+            TextAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="35"
+            ></TextBlock>-->
+
+
+
+        <!--<TabControl
+            
+            >
+            <TabItem 
+                Header="Home"
+                Padding="15"
+                FontSize="22"
+                FontFamily="Georgia"
+                FontWeight="ExtraBlack"
+                Background="DeepPink"
+                >
+                <Grid Background="DeepPink">
+                    <TextBlock>Home</TextBlock>
+                </Grid>
+                
+            </TabItem>
+            <TabItem 
+                Header="About"
+                Padding="15"
+                FontSize="22"
+                FontFamily="Georgia"
+                FontWeight="ExtraBlack"
+                Background="Orange"
+                >
+                <Grid Background="Orange">
+                    <TextBlock>About</TextBlock>
+                </Grid>
+
+            </TabItem>
+            <TabItem 
+                Header="News"
+                Padding="15"
+                FontSize="22"
+                FontFamily="Georgia"
+                FontWeight="ExtraBlack"
+                Background="LightCoral"
+                >
+                <Grid Background="LightCoral">
+                    <TextBlock>News</TextBlock>
+                </Grid>
+
+            </TabItem>
+
+            <TabItem 
+                Header="Contact"
+                Padding="15"
+                FontSize="22"
+                FontFamily="Georgia"
+                FontWeight="ExtraBlack"
+                Background="DeepSkyBlue"
+                >
+                <Grid Background="DeepSkyBlue">
+                    <TextBlock>Contact</TextBlock>
+                </Grid>
+
+            </TabItem>
+        </TabControl>-->
+
+
+
+
+        <!--<ListBox 
+            Name="lstbox"
+            Background="Bisque"
+            FontSize="30"
+            FontWeight="DemiBold"
+            DisplayMemberPath="DayOfWeek"
+            
+            >
+            --><!--<Button>Salam</Button>
+            <Expander></Expander>
+            <RadioButton></RadioButton>
+            <CheckBox></CheckBox>-->
+            <!--<sys:DateTime>2/15/2020</sys:DateTime>
+            <sys:DateTime>4/12/2021</sys:DateTime>
+            <sys:DateTime>7/3/2010</sys:DateTime>--><!--
+        </ListBox>-->
+
+        <!--<Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox 
+            Name="lstbox"
+            Background="Bisque"
+            FontSize="30"
+            FontWeight="DemiBold"
+            SelectionChanged="lstbox_SelectionChanged"
+            SelectionMode="Multiple"
+            ScrollViewer.VerticalScrollBarVisibility="Visible"
+            >
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel>
+                        
+                    </VirtualizingStackPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+        </ListBox>
+
+        <StackPanel Grid.Column="1">
+            <StackPanel.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#00b09b" Offset="0" />
+                    <GradientStop Color="#96c93d" Offset="0.5" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+            <StackPanel Margin="20">
+                <TextBlock 
+                    Name="modelTxtBlock" 
+                    Margin="10" 
+                    Text="Model : "
+                    FontSize="22"
+                    FontWeight="DemiBold"
+                           ></TextBlock>
+                <TextBlock 
+                    Name="vendorTxtBlock" 
+                    Margin="10" 
+                    Text="Vendor : "
+                    FontSize="22"
+                    FontWeight="DemiBold"
+                           ></TextBlock>
+                <TextBlock 
+                    Name="yearTxtBlock" 
+                    Margin="10" 
+                    Text="Year : "
+                    FontSize="22"
+                    FontWeight="DemiBold"
+                           ></TextBlock>
+            </StackPanel>
+            
+        </StackPanel>-->
+
+
+
+        <!--<Border  CornerRadius="10"
+            BorderBrush="SpringGreen"
+            BorderThickness="6"
+            Height="56"
+            Width="300"
+            >
+            <ComboBox BorderThickness="0"
+                Height="50"
+                
+                >
+                <ComboBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <VirtualizingStackPanel></VirtualizingStackPanel>
+                    </ItemsPanelTemplate>
+                </ComboBox.ItemsPanel>
+                <Button>Salam</Button>
+                <RadioButton></RadioButton>
+                <CheckBox></CheckBox>
+                <ProgressBar Width="250">
+                    
+                </ProgressBar>
+            </ComboBox>
+        </Border>-->
+
+
+        <ComboBox
+            Height="30"
+            Margin="20"
+            Width="300"
+            Name="cmbbox"
+            SelectionChanged="cmbbox_SelectionChanged"
+            >
+            <ComboBoxItem Background="Gold">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="mymario.jpg" Width="100" Height="100" ></Image>
+                    <TextBlock
+                        Text="Super Mario 1"
+                        TextAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="200"
+                        FontSize="28"
+                        FontWeight="SemiBold"
+                        FontFamily="Comic Sans MS"
+                        ></TextBlock>
+                    <Button Width="100" Margin="15" Content="A" FontSize="30" FontWeight="ExtraBlack" ></Button>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="DeepPink">
+                <StackPanel Orientation="Horizontal" >
+                    <Image Source="mymario.jpg" Width="100" Height="100" ></Image>
+                    <TextBlock
+                        Text="Super Mario 2"
+                        TextAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="200"
+                        FontSize="28"
+                        FontWeight="SemiBold"
+                        FontFamily="Comic Sans MS"
+                        ></TextBlock>
+                    <Button Width="100" Margin="15" Content="A" FontSize="30" FontWeight="ExtraBlack" ></Button>
+                </StackPanel>
+            </ComboBoxItem>
+            <ComboBoxItem Background="DeepSkyBlue">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="mymario.jpg" Width="100" Height="100" ></Image>
+                    <TextBlock
+                        Text="Super Mario 3"
+                        TextAlignment="Center"
+                        VerticalAlignment="Center"
+                        Width="200"
+                        FontSize="28"
+                        FontWeight="SemiBold"
+                        FontFamily="Comic Sans MS"
+                        ></TextBlock>
+                    <Button Width="100" Margin="15" Content="A" FontSize="30" FontWeight="ExtraBlack" ></Button>
+                </StackPanel>
+            </ComboBoxItem>
+          
+        </ComboBox>
+        
+        
+        
+        
+    </Grid>
+</Window>
